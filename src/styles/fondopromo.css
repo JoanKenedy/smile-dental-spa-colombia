@@ -1,0 +1,7 @@
+.container-img {
+  width: 100%;
+  margin: auto;
+}
+.container-img img {
+  max-width: 100%;
+}

@@ -1,0 +1,67 @@
+.promociones {
+  width: 100%;
+  margin: auto;
+}
+.promociones h2 {
+  font-size: 35px;
+  text-align: center;
+}
+.container_promociones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  gap: 20px;
+  padding: 20px 0px;
+}
+.item_promos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.item_promos img {
+  max-width: 70%;
+}
+.item_promos button {
+  background-color: #0d91f9;
+  border: none;
+  padding: 12px 50px;
+  margin-top: 10px;
+  width: 200px;
+}
+.item_promos button a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+}
+.promo-dos {
+  padding: 10px 0px 20px 0px;
+}
+
+@media (max-width: 767px) {
+  .container_promociones {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin: auto;
+    width: 90%;
+    gap: 20px;
+    padding: 20px 0px;
+  }
+  .item_promos img {
+    max-width: 90%;
+  }
+  .promociones h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-dos {
+    padding: 10px 0px 20px 0px;
+  }
+}

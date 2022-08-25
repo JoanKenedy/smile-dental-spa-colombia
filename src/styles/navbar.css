@@ -1,0 +1,129 @@
+header {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* position: fixed;
+  top: 0;
+  left: 0;*/
+}
+.logo_header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1;
+}
+.logo_header img {
+  padding: 7px;
+}
+.logo_header img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 3;
+  padding-right: 30px;
+}
+.menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu li {
+  list-style: none;
+}
+.menu li a {
+  color: #00395a;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+}
+.btn_urgencias {
+  background-color: #1ca5f4;
+  color: #fff !important;
+  font-size: 19px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+#menu-bar {
+  display: none;
+}
+@media (max-width: 767px) {
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo_header {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+  .logo_header img {
+    max-width: 30%;
+  }
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    padding: 0;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: 0.7s;
+    left: 0;
+  }
+  .nav.open {
+    transform: translateX(0);
+    transition: 0.7s;
+  }
+  .menu {
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #1ca5f4;
+    height: 60vh;
+  }
+  #menu-bar {
+    display: block;
+    font-size: 30px;
+    padding-right: 20px;
+  }
+  .menu li a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    transition: 0.3s;
+  }
+  .menu li a:hover {
+    color: #00395a;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+}
+@media (max-width: 480px) {
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 95%;
+    padding: 0;
+    z-index: 100;
+    transition: 0.5s;
+    left: 0;
+  }
+}
+@media (max-width: 410px) {
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 97%;
+    padding: 0;
+    z-index: 100;
+    transition: 0.5s;
+    left: 0;
+  }
+}

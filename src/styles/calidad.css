@@ -1,0 +1,37 @@
+.container-calidad {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+  padding: 20px 50px;
+}
+.item-calidad img {
+  max-width: 30%;
+}
+.item-calidad h3 {
+  font-size: 16px;
+}
+.item-calidad p {
+  font-size: 15px;
+}
+@media (max-width: 767px) {
+  .container-calidad {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    text-align: center;
+    padding: 10px 10px;
+  }
+  .item-calidad img {
+    max-width: 30%;
+  }
+  .item-calidad h3 {
+    font-size: 14px;
+  }
+  .item-calidad p {
+    font-size: 12px;
+    text-align: justify;
+  }
+}
