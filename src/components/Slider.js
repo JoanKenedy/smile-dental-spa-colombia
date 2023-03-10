@@ -1,12 +1,12 @@
 import React, { Fragment } from "react";
 import "../styles/slider.css";
-
-import PortadaUno from "../img/slider_uno.jpg";
-import PortadaDos from "../img/slider_dos.jpg";
-import PortadaTres from "../img/slider_tres.jpg";
+import PortadaInicial from "../img/urgencias.png";
+import PortadaUno from "../img/slider-uno.jpg";
+import PortadaDos from "../img/slider-dos.jpg";
+import PortadaTres from "../img/slider-tres.jpg";
 
 export const Slider = () => {
-  const images = [PortadaUno, PortadaDos, PortadaTres];
+  const images = [PortadaInicial, PortadaUno, PortadaDos, PortadaTres];
   const [imagenActual, setImagenActual] = React.useState(0);
 
   const cantidad = images?.length;
@@ -55,32 +55,20 @@ export const Slider = () => {
               <h6>Agenda tu cita</h6>
               <p>En solo unos minutos</p>
               <a
-                href="https://api.whatsapp.com/send?phone=528135698372"
+                href="https://api.whatsapp.com/send?phone=573114878409&text=Quiero agendar una cita"
                 target="_blank"
               >
                 <i class="fa-solid fa-calendar-plus"></i> Agendar cita
               </a>
             </div>
             <div className="item_cita">
-              <h6>Nuestros Horarios</h6>
+              <h6>Horario de atención</h6>
               <div className="container_horarios">
                 <div className="item_horarios">
-                  <p>Lunes a Viernes</p>
+                  <p>Lunes a Domingo</p>
                 </div>
                 <div className="item_horarios">
-                  <p>9:00am a 7:00pm</p>
-                </div>
-                <div className="item_horarios">
-                  <p>Sábados</p>
-                </div>
-                <div className="item_horarios">
-                  <p>9:00am a 3:00pm</p>
-                </div>
-                <div className="item_horarios">
-                  <p>Emergencias</p>
-                </div>
-                <div className="item_horarios">
-                  <p>24/7</p>
+                  <p>Las 24 horas del día , 7 días a la semana</p>
                 </div>
               </div>
             </div>

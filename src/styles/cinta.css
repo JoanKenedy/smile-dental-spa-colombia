@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #0d91f9;
+  background-color: #009999;
   padding: 20px 75px;
 }
 .item_cinta:nth-child(1) {

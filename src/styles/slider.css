@@ -49,8 +49,6 @@
 .citas {
   width: 100%;
   margin: auto;
-  position: absolute;
-  top: 70%;
 }
 .container_cita {
   width: 90%;
@@ -61,17 +59,23 @@
 }
 .item_cita:nth-child(1) {
   background-color: #3ab0ff;
-  padding: 40px 20px;
-  text-align: left;
-  line-height: 70px;
+  padding: 20px;
+  line-height: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .item_cita:nth-child(1) a {
-  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #eb1d36;
-  width: 150px;
+  display: block;
+  width: 200px;
+  margin: auto;
+  text-align: center;
   color: #fff;
   text-decoration: none;
-  font-size: 16px;
 }
 .item_cita:nth-child(1) a i {
   margin-right: 7px;
@@ -134,8 +138,6 @@
   .citas {
     width: 100%;
     margin: auto;
-    position: absolute;
-    top: 74%;
   }
   .container_cita {
     width: 90%;
@@ -154,12 +156,16 @@
     line-height: 50px;
   }
   .item_cita:nth-child(1) a {
-    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #eb1d36;
-    width: 150px;
+    display: block;
+    width: 200px;
+    margin: auto;
+    text-align: center;
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
   }
   .item_cita h6 {
     font-size: 25px;

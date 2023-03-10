@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // Assuming logo.png is in the same folder as JS file
 import logo from "../img/logo_logo.png";
+import menu from "../img/menu.png";
 import "../styles/navbar.css";
 import { Link } from "react-router-dom";
 
@@ -11,6 +12,16 @@ const Navbar = () => {
 
   return (
     <header>
+      <div className="header-tel">
+        <p>
+          <a href="tel:3114878409">Tel: 3114878409</a>
+        </p>
+        <p>
+          <a href="https://instagram.com/smile.dentalspa?igshid=Yzg5MTU1MDY=">
+            <i class="fa-brands fa-square-instagram"></i>
+          </a>
+        </p>
+      </div>
       <div className="logo_header">
         <img src={logo} alt="" />
       </div>
@@ -23,7 +34,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="nosotros" onClick={handleIsOpen}>
-              Acerca de Armonisa
+              Nosotros
             </Link>
           </li>
           <li>
@@ -31,14 +42,10 @@ const Navbar = () => {
               Promociones
             </Link>
           </li>
-          <li>
-            <Link to="servicios" onClick={handleIsOpen}>
-              Servicios
-            </Link>
-          </li>
+
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=528135698372"
+              href="https://api.whatsapp.com/send?phone=573114878409"
               target="_blank"
               className="btn_urgencias"
             >
@@ -48,7 +55,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="menu-bar" onClick={() => setIsOpen(!isOpen)}>
-        <i class="fa-solid fa-bars" id="menu-bar"></i>
+        <img src={menu} alt="" id="menu-bar" />
       </div>
     </header>
   );

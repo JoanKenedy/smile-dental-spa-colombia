@@ -1,8 +1,8 @@
 .container_dentric {
-  padding: 160px 0px 15px 0px;
+  padding: 15px 0px 15px 0px;
 }
 .container_nosotros {
-  margin-top: 0px;
+  margin-top: 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 90%;
@@ -10,13 +10,14 @@
 }
 .item_nosotros img {
   max-width: 100%;
+  border-radius: 2px 50px;
 }
 .item_nosotros:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 15px;
+  gap: 0px;
 }
 .item_nosotros:nth-child(2) h2 {
   font-size: 30px;
@@ -68,15 +69,22 @@
 }
 .item_servicios h2 {
   font-size: 18px;
+  text-align: center !important;
 }
 @media (max-width: 767px) {
+  .container_dentric {
+    padding: 0px 0px 15px 0px;
+  }
   .container_nosotros {
-    margin-top: 0px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     width: 90%;
     margin: auto;
-    gap: 0px;
+    gap: 15px;
+  }
+  .item_nosotros:nth-child(1) {
+    margin-top: 15px;
   }
   .item_nosotros:nth-child(2) {
     gap: 0px;

@@ -1,0 +1,50 @@
+.opiniones {
+  width: 100%;
+  overflow-x: hidden;
+}
+.opiniones h2 {
+  text-align: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.swiper {
+  height: 100%;
+}
+.card {
+  background-color: #3361ff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.card h6 {
+  color: #fff;
+  font-size: 1.2em;
+}
+.card span i {
+  color: gold;
+  font-size: 20px;
+  margin: 5px;
+}
+.card p {
+  color: #fff;
+  font-size: 0.9em;
+  text-align: justify;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+  font-size: 20px;
+}
+.swiper-button-prev {
+  left: 0px;
+}
+.swiper-button-next {
+  right: 0px;
+}

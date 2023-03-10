@@ -9,14 +9,14 @@ const Botones = () => {
     <div className="container-flotantes">
       <div>
         <a
-          href="https://api.whatsapp.com/send?phone=528135698372"
+          href="https://api.whatsapp.com/send?phone=573114878409"
           target="_blank"
         >
           <img src={Whatsapp} alt="" />
         </a>
       </div>
       <div>
-        <a href="tel:8134239974" target="_blank">
+        <a href="tel:3114878409" target="_blank">
           <img src={Telefono} alt="" />
         </a>
       </div>

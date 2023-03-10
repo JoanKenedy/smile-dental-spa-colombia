@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import Servicios from "./pages/Servicios";
-import Promotions from "./pages/Promotions";
+
+import Promociones from "./components/Promociones";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Botones from "./components/Botones";
-import Nosotros from "./pages/Nosotros";
+import Nosotros from "./components/Acerca";
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="servicios" element={<Servicios />} />
-          <Route path="promotions" element={<Promotions />} />
+
+          <Route path="promotions" element={<Promociones />} />
           <Route path="nosotros" element={<Nosotros />} />
         </Routes>
         <Botones />

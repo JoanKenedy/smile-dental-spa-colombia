@@ -3,18 +3,43 @@ header {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   /* position: fixed;
   top: 0;
   left: 0;*/
 }
+.header-tel {
+  width: 100%;
+  background-color: #009999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.header-tel p {
+  margin: 15px;
+  padding: 10px auto;
+}
+.header-tel p a {
+  font-size: 1.1em;
+  color: #fff;
+  margin: 0px;
+  text-decoration: none;
+}
+.header-tel p a i {
+  font-size: 32px;
+}
 .logo_header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex: 1;
+  padding-left: 40px;
 }
 .logo_header img {
-  padding: 7px;
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
 }
 .logo_header img:hover {
   transform: scale(1.1);
@@ -30,11 +55,12 @@ header {
 .menu {
   display: flex;
   flex: 1;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
 }
 .menu li {
   list-style: none;
+  margin: 0px 35px;
 }
 .menu li a {
   color: #00395a;
@@ -43,10 +69,10 @@ header {
   font-weight: 400;
 }
 .btn_urgencias {
-  background-color: #1ca5f4;
+  background-color: red;
   color: #fff !important;
   font-size: 19px;
-  padding: 10px 20px;
+  padding: 10px 35px;
   border-radius: 7px;
 }
 #menu-bar {
@@ -59,37 +85,72 @@ header {
     justify-content: space-around;
     align-items: center;
   }
+  .header-tel {
+    width: 100%;
+    background-color: #009999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+  }
+
+  .header-tel p a {
+    font-size: 0.9em;
+    color: #fff;
+    margin: 5px;
+    text-decoration: none;
+  }
+  .header-tel p a i {
+    font-size: 25px;
+  }
   .logo_header {
     justify-content: flex-start;
     padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .logo_header img {
-    max-width: 30%;
+    width: 120px;
+    height: 50px;
+    object-fit: contain;
   }
   .nav {
     position: absolute;
     width: 100%;
+    height: 0;
+    overflow: hidden;
     top: 100%;
     padding: 0;
     z-index: 100;
-    transform: translateX(100%);
     transition: 0.7s;
     left: 0;
+    background-color: #1ca5f4;
   }
   .nav.open {
-    transform: translateX(0);
+    height: 100vh;
     transition: 0.7s;
+    overflow: visible;
+    width: 100%;
   }
   .menu {
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #1ca5f4;
-    height: 60vh;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    gap: 70px;
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 0;
+  }
+  .menu-bar {
+    padding-right: 40px;
   }
   #menu-bar {
     display: block;
-    font-size: 30px;
-    padding-right: 20px;
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    padding-right: 0px;
   }
   .menu li a {
     font-size: 18px;
@@ -101,8 +162,7 @@ header {
   }
   .menu li a:hover {
     color: #00395a;
-    text-transform: uppercase;
-    transition: 0.3s;
+    transition: 0.5s;
   }
 }
 @media (max-width: 480px) {

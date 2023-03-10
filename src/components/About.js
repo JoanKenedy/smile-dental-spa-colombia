@@ -1,13 +1,13 @@
 import React from "react";
-import Nosotros from "../img/nosotros.jpg";
 import "../styles/about.css";
+import Card from "./Card";
 
 const About = () => {
   return (
     <div className="container-about">
       <div className="container-item">
         <div className="item-about">
-          <img src={Nosotros} alt="" />
+          <Card />
         </div>
         <div className="item-about">
           <h2>Bienvenidos a Armonisa</h2>
@@ -20,7 +20,6 @@ const About = () => {
             confortable al paciente, utilizando herramientas y equipos de alta
             tecnología
           </p>
-          <a href="#">+ Conocer más</a>
         </div>
       </div>
     </div>

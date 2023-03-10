@@ -10,8 +10,14 @@
   gap: 15px;
   margin: auto;
 }
+.item-about {
+  width: auto;
+}
 .item-about img {
   max-width: 100%;
+}
+.container-slider {
+  width: 50%;
 }
 .item-about:nth-child(2) {
   display: flex;

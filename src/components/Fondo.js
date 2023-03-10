@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/fondo.css";
 
 const Fondo = () => {
@@ -16,7 +15,7 @@ const Fondo = () => {
         </p>
         <div className="btn-contacto">
           <a
-            href="https://api.whatsapp.com/send?phone=528135698372"
+            href="https://api.whatsapp.com/send?phone=573114878409"
             target="_blank"
           >
             Contacto

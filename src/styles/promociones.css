@@ -3,8 +3,14 @@
   margin: auto;
 }
 .promociones h2 {
-  font-size: 35px;
+  font-size: 2.5em;
   text-align: center;
+  display: block;
+  width: 600px;
+  background-color: #009999;
+  margin: auto;
+  border-radius: 20px;
+  color: #fff;
 }
 .container_promociones {
   display: grid;
@@ -22,14 +28,31 @@
   align-items: center;
 }
 .item_promos img {
-  max-width: 70%;
+  max-width: 80%;
+  transition: 0.7s;
 }
+.item_promos img:hover {
+  transition: 0.7s;
+  transform: scale(0.9);
+  border-radius: 50px 7px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.6);
+}
+
 .item_promos button {
   background-color: #0d91f9;
   border: none;
   padding: 12px 50px;
   margin-top: 10px;
   width: 200px;
+  border-radius: 10px 2px;
+  transition: 0.7s;
+  color: #0d91f9;
+}
+.item_promos button:hover {
+  background-color: #0d91f9;
+  border-radius: 2px 10px;
+  transition: 0.7s;
+  color: #fff;
 }
 .item_promos button a {
   color: #fff;
@@ -55,8 +78,14 @@
     max-width: 90%;
   }
   .promociones h2 {
-    font-size: 25px;
+    font-size: 1.5em;
     text-align: center;
+    display: block;
+    width: 300px;
+    background-color: #009999;
+    margin: auto;
+    border-radius: 20px;
+    color: #fff;
   }
 }
 
